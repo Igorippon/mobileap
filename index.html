@@ -3,20 +3,61 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="/mobileap/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>mobileap</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 
-  <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/vanilla-app-template/assets/index-25d30ca9.css">
+  <script type="module" crossorigin src="/mobileap/assets/index-fac82e35.js"></script>
+  <link rel="stylesheet" href="/mobileap/assets/index-a240b4fa.css">
 </head>
 
 <body>
-
-  ENOENT: no such file or directory, open '/home/runner/work/mobileap/mobileap/src/partials /header.html'
-  ENOENT: no such file or directory, open '/home/runner/work/mobileap/mobileap/src/partials /hero.html'
-
+  <header class="header-container container">
+    <nav class=" nav-container">
+        <a class="logo-link link" href="./index.html">Mobileapp</a>
+        <ul class="header-list list">
+            <li class="heder-item"><a class="header-link link" href="">Home</a></li>
+            <li class="heder-item"><a class="header-link link" href="">Features</a></li>
+            <li class="heder-item"><a class="header-link link" href="">Team</a></li>
+            <li class="heder-item"><a class="header-link link" href="">Testimonials</a></li>
+            <li class="heder-item"><a class="header-link link" href="">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+  <main>
+    <section class=" hero-container container">
+    <h1 class="hero-title title">Introducing Mobileapp</h1>
+    <p class="hero-title-text">Maecenas vitae tellus sapien. Prasent</p>
+    <ul class="hero-list list">
+        <li class="hero-item">
+            <p class="hero-text">> semper scelerisque tristique a enim</p>
+        </li>
+        <li class="hero-item">
+            <p class="hero-text">> Integer ut mattis nulla, eget vehicula elit</p>
+        </li>
+        <li class="hero-item">
+            <p class="hero-text">> Prasent rutrum ac nunc et</p>
+        </li>
+    </ul>
+    <button class="hero-btn" type="button">Download</button>
+    <ul class="hero-img list">
+        <li>
+            <div class="thumb1">
+                <img src="./images/decor.png" alt="decor" width="472" />
+            </div>
+        </li>
+        <li>
+            <div class="thumb2">
+                <img src="./images/decor_1.png" alt="decor_1" width="541" />
+            </div>
+        </li>
+    </ul>
+</section>
+  </main>
   
 </body>
 
