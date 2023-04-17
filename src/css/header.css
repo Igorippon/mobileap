@@ -1,5 +1,6 @@
 .header-container {
   position: relative;
+
 }
 
 .logo-link {
@@ -17,10 +18,11 @@
   z-index: 1;
   width: 100%;
   display: flex;
-  align-items: center;
-  padding: 29px 016px 28px;
+
+  padding: 29px 16px 28px;
   background-image:
     linear-gradient(to right, rgba(0, 197, 235, 0.3), rgba(181, 68, 254, 0.3));
+
 }
 
 .header-list {
