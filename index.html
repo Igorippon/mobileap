@@ -6,19 +6,26 @@
   <link rel="icon" type="image/svg+xml" href="/mobileap/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>mobileap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
 
   <script type="module" crossorigin src="/mobileap/assets/index-fac82e35.js"></script>
-  <link rel="stylesheet" href="/mobileap/assets/index-a240b4fa.css">
+  <link rel="stylesheet" href="/mobileap/assets/index-a40bf0bc.css">
 </head>
 
 <body>
   <header class="header-container container">
     <nav class=" nav-container">
+
         <a class="logo-link link" href="./index.html">Mobileapp</a>
+        <button type="button" data-menu-open class="menu-open-btn"><svg width="32" height="22" class="menu-open-icon">
+                <use href="/mobileap/assets/icons-8847cfd6.svg#icon-burger"></use>
+            </svg></button>
         <ul class="header-list list">
             <li class="heder-item"><a class="header-link link" href="">Home</a></li>
             <li class="heder-item"><a class="header-link link" href="">Features</a></li>
@@ -27,6 +34,24 @@
             <li class="heder-item"><a class="header-link link" href="">Contact</a></li>
         </ul>
     </nav>
+    <div class="mob-menu is-hidden" data-menu>
+        <div>
+            <a class="logo-link link" href="./index.html">Mobileapp</a>
+            <button type="button" data-menu-close class="menu-close-btn"><svg width="20" height="20"
+                    class="menu-close-icon">
+                    <use href="/mobileap/assets/icons-8847cfd6.svg#icon-clouse"></use>
+                </svg></button>
+            <ul class="mob-menu-list list">
+                <li class="mob-menu-item"><a class="mob-menu-link mob-menu-activ link" href="./index.html">HOME</a>
+                </li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">FEATURES</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">TEAM</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">TESTIMONIALS</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
 </header>
   <main>
     <section class=" hero-container container">
@@ -44,21 +69,70 @@
         </li>
     </ul>
     <button class="hero-btn" type="button">Download</button>
-    <ul class="hero-img list">
-        <li>
-            <div class="thumb1">
-                <img src="./images/decor.png" alt="decor" width="472" />
-            </div>
+    <div class="thumb1">
+        <picture class="mob">
+            <source srcset="/mobileap/assets/decor-053d748f.png 1x, /mobileap/assets/decor@2x-826a08d5.png 2x" media="(min-width:1200px)">
+            <source srcset="/mobileap/assets/decor-top-340f42fc.png 1x, /mobileap/assets/decor-top@2x-51cd4cfb.png 2x" media="(min-width:768px)">
+            <img src="/mobileap/assets/decor-053d748f.png" alt="decor" width="541" height="418" />
+        </picture>
+    </div>
+    <div class="thumb2">
+        <picture>
+            <source srcset="/mobileap/assets/decor_1-d6c64984.png 1x, /mobileap/assets/decor_1@2x-c934361c.png 2x" media="(min-width:1200px)">
+            <source srcset="/mobileap/assets/decor_1-top-02021742.png 1x, /mobileap/assets/decor_1-top@2x-4584c278.png 2x" media="(min-width:768px)">
+            <source srcset="/mobileap/assets/decor_1-mob-7a26c713.png 1x, /mobileap/assets/decor_1-mob@2x-9da70ff7.png 2x" media="(max-width:767px)">
+            <img src="/mobileap/assets/decor_1-d6c64984.png" alt="decor_1" width="574" height="678" />
+        </picture>
+    </div>
+
+
+</section>
+    <!-- <section class="feature-container container">
+    <h2 class="feature-title title">KEY FEATURES</h2>
+    <p class="feature-text text">Nunc vulputate nibh sed congue facilisis. Curabitur posuere scelerisque neque. In sit
+        amet
+        lectus non lacus
+        sollicitudin cursus a vitae felis. Praesent luctus mi quis nisi interdum eleifend.</p>
+    <ul class="feature-list list">
+        <li class="feature-item">
+            <h3>Amet varius</h3>
+            <p>Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                diam a iaculis malesuada</p>
         </li>
-        <li>
-            <div class="thumb2">
-                <img src="./images/decor_1.png" alt="decor_1" width="541" />
-            </div>
+        <li class="feature-item">
+            <h3>Amet varius</h3>
+            <p>Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                diam a iaculis malesuada</p>
+        </li>
+        <li class="feature-item">
+            <h3>Amet varius</h3>
+            <p>Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                diam a iaculis malesuada</p>
+        </li>
+        <li class="feature-item">
+            <h3>Amet varius</h3>
+            <p>Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                diam a iaculis malesuada</p>
+        </li>
+        <li class="feature-item">
+            <h3>Amet varius</h3>
+            <p>Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                diam a iaculis malesuada</p>
+        </li>
+        <li class="feature-item">
+            <h3>Amet varius</h3>
+            <p>Donec posuere augue venenatis, aliquet ligula ut, tempus quam. Vivamus
+                diam a iaculis malesuada</p>
         </li>
     </ul>
-</section>
+    <div class="feature-tumb">
+        <img src="./img/phone.png" alt="" width="396">
+    </div>
+</section> -->
+
   </main>
   
+  <script src="/menu.js"></script>
 </body>
 
 </html>
