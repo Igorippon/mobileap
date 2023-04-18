@@ -13,16 +13,21 @@
         </li>
     </ul>
     <button class="hero-btn" type="button">Download</button>
-    <ul class="hero-img list">
-        <li>
-            <div class="thumb1">
-                <img src="./images/decor.png" alt="decor" width="472" />
-            </div>
-        </li>
-        <li>
-            <div class="thumb2">
-                <img src="./images/decor_1.png" alt="decor_1" width="541" />
-            </div>
-        </li>
-    </ul>
+    <div class="thumb1">
+        <picture class="mob">
+            <source srcset="./img/decor.png 1x, ./img/decor@2x.png 2x" media="(min-width:1200px)">
+            <source srcset="./img/decor-top.png 1x, ./img/decor-top@2x.png 2x" media="(min-width:768px)">
+            <img src="./img/decor.png" alt="decor" width="541" height="418" />
+        </picture>
+    </div>
+    <div class="thumb2">
+        <picture>
+            <source srcset="./img/decor_1.png 1x, ./img/decor_1@2x.png 2x" media="(min-width:1200px)">
+            <source srcset="./img/decor_1-top.png 1x, ./img/decor_1-top@2x.png 2x" media="(min-width:768px)">
+            <source srcset="./img/decor_1-mob.png 1x, ./img/decor_1-mob@2x.png 2x" media="(max-width:767px)">
+            <img src="./img/decor_1.png" alt="decor_1" width="574" height="678" />
+        </picture>
+    </div>
+
+
 </section>

@@ -17,12 +17,7 @@ ul {
 img {
   display: block;
   max-width: 100%;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  color: var(--basic-text-color);
+  height: auto;
 }
 
 .link {
@@ -31,11 +26,4 @@ body {
 
 .list {
   list-style: none;
-}
-
-.container {
-  width: 1280px;
-
-
-  margin: 0 auto;
 }

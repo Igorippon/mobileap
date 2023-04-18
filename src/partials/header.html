@@ -1,6 +1,10 @@
 <header class="header-container container">
     <nav class=" nav-container">
+
         <a class="logo-link link" href="./index.html">Mobileapp</a>
+        <button type="button" data-menu-open class="menu-open-btn"><svg width="32" height="22" class="menu-open-icon">
+                <use href="./img/icons.svg#icon-burger"></use>
+            </svg></button>
         <ul class="header-list list">
             <li class="heder-item"><a class="header-link link" href="">Home</a></li>
             <li class="heder-item"><a class="header-link link" href="">Features</a></li>
@@ -9,4 +13,22 @@
             <li class="heder-item"><a class="header-link link" href="">Contact</a></li>
         </ul>
     </nav>
+    <div class="mob-menu is-hidden" data-menu>
+        <div>
+            <a class="logo-link link" href="./index.html">Mobileapp</a>
+            <button type="button" data-menu-close class="menu-close-btn"><svg width="20" height="20"
+                    class="menu-close-icon">
+                    <use href="./img/icons.svg#icon-clouse"></use>
+                </svg></button>
+            <ul class="mob-menu-list list">
+                <li class="mob-menu-item"><a class="mob-menu-link mob-menu-activ link" href="./index.html">HOME</a>
+                </li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">FEATURES</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">TEAM</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">TESTIMONIALS</a></li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">CONTACT</a></li>
+            </ul>
+        </div>
+
+    </div>
 </header>
